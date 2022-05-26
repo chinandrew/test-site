@@ -19,6 +19,7 @@ const backgroundcolor = "#fff";
 // Link properties
 const acolor = accentcolor;
 const adecoration = "underline dotted";
+const adecorationthickness = "1px";
 // const ahovercolor = accentcolor;
 // const ahoverduration = "0.3s";
 // const ahoverdecoration = "none"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
@@ -27,6 +28,7 @@ const adecoration = "underline dotted";
 const menucolor = basecolor;
 const menufontsize = "14pt";
 const menudecoration = "underline dotted";
+const menudecorationthickness = "1px";
 // const menuhover = accentcolor;
 // const menuhoverduration = "0.3s";
 // const menuhoverdecoration = "underline dotted"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
@@ -86,9 +88,11 @@ $("body").css("font-size", bodyfontsize);
 $("body").css("background-color", backgroundcolor);
 
 $("a").css("text-decoration", adecoration);
+$("a").css("text-decoration-thickness",  adecorationthickness);
 
 $(".menulink").css("font-size", menufontsize);
 $(".menulink").css("text-decoration", menudecoration);
+$(".menulink").css("text-decoration-thickness", menudecorationthickness);
 
 $(".header").css("color", headercolor);
 $(".header").css("font-size", headerfontsize);
