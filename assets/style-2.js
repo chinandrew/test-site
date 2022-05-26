@@ -3,7 +3,7 @@ const fontname = "Ubuntu";
 const fontweights = [300, 400]
 
 // Color properties
-const basecolor = "#444";
+const basecolor = "#555";
 const accentcolor = "#a00";
 const highlightcolor = "#111";
 
@@ -29,7 +29,7 @@ const menufontsize = "14pt";
 const menudecoration = "underline dotted";
 // const menuhover = accentcolor;
 // const menuhoverduration = "0.3s";
-const menuhoverdecoration = "underline dotted"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
+// const menuhoverdecoration = "underline dotted"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
 
 // Header properties
 const headercolor = accentcolor;
@@ -84,10 +84,8 @@ $("body").css("font-weight", bodyfontweight);
 $("body").css("font-size", bodyfontsize);
 $("body").css("background-color", backgroundcolor);
 
-$("a").css("color", acolor);
 $("a").css("text-decoration", adecoration);
 
-$(".menulink").css("color", menucolor);
 $(".menulink").css("font-size", menufontsize);
 $(".menulink").css("text-decoration", menudecoration);
 
