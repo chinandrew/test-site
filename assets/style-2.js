@@ -35,6 +35,7 @@ const menudecoration = "underline dotted";
 const headercolor = accentcolor;
 const headerfontsize = "18pt";
 const headerdecoration = "none";
+const headerweight = 600;
 const namecolor = highlightcolor;
 const namefontsize = "23pt";
 
@@ -42,7 +43,7 @@ const namefontsize = "23pt";
 // Publication properties
 const ptitlecolor = accentcolor;
 const ptitlefontsize = bodyfontsize;
-const ptitleweight = bodyfontweight;
+const ptitleweight = 400;
 const ptitledecoration = "none";
 const ptitlestyle = "normal";
 
@@ -92,6 +93,8 @@ $(".menulink").css("text-decoration", menudecoration);
 $(".header").css("color", headercolor);
 $(".header").css("font-size", headerfontsize);
 $(".header").css("text-decoration", headerdecoration);
+$(".header").css("font-weight", headerweight);
+
 $(".name").css("color", namecolor);
 $(".name").css("font-size", namefontsize);
 
