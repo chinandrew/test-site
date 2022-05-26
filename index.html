@@ -15,7 +15,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style-3.css">
+    <link rel="stylesheet" href="assets/style-2.css">
       
     <title>Andrew Chin</title>
   </head>
@@ -44,9 +44,23 @@
 
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
 
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
                  <p class="header pt-5">Publications</p>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Placeholder</span><br>
+                     Placeholder, <span class="thisauthor">Andrew Chin</span>, Placeholder<br>
+                     <span class="conf"><a class="confshort" href="Conference Site/">Placeholder</a> | Placeholder</span><br>
+                    
+                     <a class="tag" href="https://arxiv.org/" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://arxiv.org/" target="_blank">abstract</a><span class="tagsep">|</span>
+                     <a class="tag" href="Placeholder" target="_blank">cite</a><span class="tagsep">|</span>
+                     <a class="tag" href="Placeholder" target="_blank">website</a>
+                 </p>
+                 </div>
                  <div class="py-2">
                  <p class="paper my-2 pl-2">
                      <span class="papertitle">Placeholder</span><br>
@@ -161,7 +175,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="assets/style-3.js"></script>
+    <script src="assets/style-2.js"></script>
 </body>
   <style>
   </style>
@@ -191,7 +205,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 25;
 const currentFrame = index => (
-  'https://raw.githubusercontent.com/chinandrew/background-test/master/t30_2/bg' + `${index.toString()}.svg`
+  'https://raw.githubusercontent.com/chinandrew/background-test/master/increment2_white/bg' + `${index.toString()}.svg`
 )
 
 const preloadImages = () => {
@@ -211,7 +225,7 @@ img.onload=function(){
 
 const updateImage = index => {
   img.src = currentFrame(index);
-  context.clearRect(0, 0, canvas.width, canvas.height);
+  //context.clearRect(0, 0, canvas.width, canvas.height);
   context.drawImage(img, 0, 0);
 }
 
