@@ -177,7 +177,7 @@
   canvas {
     position: fixed;
     bottom:  0;
-    transform: translate(-40%, 55%) scale(150%);
+    transform: translate(-20%, 10%) scale(100%);
     opacity: 55%;
     z-index: -1000;
     overflow: hidden;
@@ -189,9 +189,9 @@ const html = document.documentElement;
 const canvas = document.getElementById("distribution");
 const context = canvas.getContext("2d");
 
-const frameCount = 45;
+const frameCount = 25;
 const currentFrame = index => (
-  'https://raw.githubusercontent.com/chinandrew/background-test/master/50_wide_transparent/bg' + `${index.toString()}.svg`
+  'https://raw.githubusercontent.com/chinandrew/background-test/master/t30_2/bg' + `${index.toString()}.svg`
 )
 
 const preloadImages = () => {
@@ -203,8 +203,8 @@ const preloadImages = () => {
 
 const img = new Image()
 img.src = currentFrame(1);
-canvas.width=1158;
-canvas.height=770;
+canvas.width=2000;
+canvas.height=800;
 img.onload=function(){
   context.drawImage(img, 0, 0);
 }
